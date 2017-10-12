@@ -30,7 +30,7 @@ class ConceitoProdutos extends Controller {
     //Metodo para Cadastrar os produtos
     public function cadastrar(Request $request) {
         $this->validate($request, [
-            'produto' => 'required|min:5|max:100'
+            'produto' => 'required|min:3|max:100'
                 ], [
             'produto.required' => 'Preencha o nome do Produto',
             'produto.min' => 'Minimo de 3 Caracteres ',
